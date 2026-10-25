@@ -1,0 +1,36 @@
+<!-- 
+  @note The HTML navigation layout and component structure were generated 
+        by an LLM (Gemini) in summer 2026. Target routing paths and icons 
+        were adjusted and verified manually.
+-->
+<mat-toolbar color="primary" class="shadow-sm">
+
+    <!-- Container to ensure same positioning as contents -->
+    <div class="max-w-6xl w-full mx-auto flex items-center px-6 sm:px-0">
+        
+        <!-- Logo -->
+        <span routerLink="/" class="brand-logo">
+            <mat-icon>grass</mat-icon> PlantTracker
+        </span>
+        
+        <!-- Placeholder for spacing -->
+        <span class="spacer"></span>
+        <span style="flex: 1 1 auto;"></span>
+  
+        <!-- Navigation Links -->
+        <button mat-button routerLink="/plants" routerLinkActive="active-link">
+            <mat-icon>local_florist</mat-icon> Plants
+        </button>
+        
+        <!-- Pfad: /gardenbeds -->
+        <button mat-button routerLink="/gardenbeds" routerLinkActive="active-link">
+            <mat-icon>layers</mat-icon> Garden Beds
+        </button>
+        
+        <!-- Pfad: /harvest -->
+        <button mat-button routerLink="/harvest" routerLinkActive="active-link">
+            <mat-icon>eco</mat-icon> Harvest
+        </button> 
+    </div>
+</mat-toolbar>
+
