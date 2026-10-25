@@ -21,7 +21,7 @@ Before considering any production deployment, the following security and archite
 
 ### Core Technologies
 
-* **Backend:** Java 25, Spring Boot (Spring Web, Spring JDBC), Maven, Lombok
+* **Backend:** Java 21, Spring Boot (Spring Web, Spring JDBC), Maven, Lombok
 * **Frontend:** Angular 20, TypeScript, HTML, CSS (Node.js v24, npm v11)
 * **Database:** PostgreSQL (Originally Microsoft SQL Server)
 * **Infrastructure:** Docker, Docker Compose
