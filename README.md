@@ -6,6 +6,17 @@ This project was originally developed as a **University Project for the Database
 
 ---
 
+## Important Notice: Development Environment Only
+
+**This repository is configured strictly for a local development environment and is NOT production-ready.**
+
+Before considering any production deployment, the following security and architectural changes are mandatory:
+* **Secret Management:** All credentials, database passwords, and API keys are currently handled via plain-text environment variables in the `.env` file and Docker configurations. For production, these must be migrated to a secure secrets manager (e.g., Spring Cloud Vault, AWS Secrets Manager, or encrypted Docker Secrets).
+* **Database & Volumes:** The Dockerized PostgreSQL setup is optimized for local testing and rapid prototyping. It lacks the enterprise backup strategies, persistent volume configurations, and fine-tuned connection pooling required for a stable production environment.
+* **CORS & Security:** Cross-Origin Resource Sharing (CORS) and security filters are configured loosely to allow seamless communication between the local Angular dev server and the Spring Boot backend.
+
+---
+
 ## Tech Stack
 
 ### Core Technologies
